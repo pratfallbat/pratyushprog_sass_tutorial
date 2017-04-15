@@ -7,20 +7,42 @@
 <h1></br></br>Welcome to ProgMatch</h1>
   
   
-<h2>This is the first page </h2>
+<h2>This is the first source </h2>
+</br>
 <h3>A membership site where entrepreneurs can meet developers.</h3>
 </br>
 </br>
 </div>
 
+<div class="container home-signup-links">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="well">
+        <h2 class="text-center">Basic Membership</h2>
+        <h4>Sign up for free and get basic access to the community.</h4>
+        </br>
+            <%= link_to "Sign up with Basic", new_user_registration_path(plan: @basic_plan.id), class: 'btn btn-primary btn-lg btn-block' %>
 
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="well">
+        <h2 class="text-center">Pro Membership</h2>
+        </br>
+        <h4>Sign up for the pro account for $10/month and get access to the community and contact information!</h4>
 
-
-
+<%= link_to "Sign up with Pro", new_user_registration_path(plan: @pro_plan.id), class: 'btn btn-success btn-lg btn-block' %>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
 <div class="homeend-callout text-center container-fluid">
+</br>
+  <div text-center><h2>PROCEDURE</h2></div>
+  </br>
   <h3>Membership organization is a term which refers to any organization that allows people to subscribe, and often requires them to pay a membership fee or "subscription".
 
 Membership organizations typically have a particular purpose, which involves connecting people together around a particular profession, industry, activity, interest, mission or geographical location. This might simply be to encourage or facilitate interaction and collaboration, but it also often involves promoting and enhancing the purpose.</br>
