@@ -130,15 +130,20 @@ background: linear-gradient(to right, #F11712, #0099F7); /* W3C, IE 10+/ Edge, F
 .well {
   margin-right: 30px;
   margin-bottom: 30px;
-  
+  border: 10px solid #090909;
+  margin-left: none;
+  margin-right:none;
     min-height: 30px;
     padding: 19px;
     margin-bottom: 20px;
     background-color: #31708f;
     border: 1px solid #e3e3e3;
-    border-radius: 18px;
+    border-radius: 30px;
+        background-color: rgba(51, 122, 183, 0.42);
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-    box-shadow: 0 1px 8px 20px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 1px 8px 20px #31708f;
+
+    
 }
 
 
