@@ -19,10 +19,19 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
  
- h1,h2,h3{
-font-family: 'Oxygen', sans-serif;
+ 
+ 
+ h1, h2, h3 {
+  margin: 0;
+  font-family: 'Oxygen', sans-serif;
     font-weight: 600;
- }
+}
+
+h1 {
+  & + h2 {
+    margin-top: 1em;
+  }
+}
 
 .red-callout, {
    
@@ -93,3 +102,32 @@ background: linear-gradient(to right, #F11712, #0099F7); /* W3C, IE 10+/ Edge, F
     border-color: #3c763d;
      border-radius: 4px;
 }
+.alert-notice {
+  display: none;
+}
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: 50px;
+}
+
+.navbar-btn, .btn-default  {
+  margin-left: 4px;
+     color: #090909;
+  &:hover {
+    color: #FF7A00;
+  }
+  &:active {
+    color: #B25500;
+  }
+}
+
+.btn-default, .navbar-btn , .navbar-btn  {
+  margin: 0;
+  line-height: 1.5em;
+  & + & {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+}
+
